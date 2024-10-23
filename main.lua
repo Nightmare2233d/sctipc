@@ -1,4 +1,7 @@
 -- 4
+
+task.wait(10)
+
 local Workspace = game.Workspace
 local ReplicatedStorage = game.ReplicatedStorage
 local SoundService = game.SoundService
