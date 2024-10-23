@@ -1,6 +1,7 @@
 -- 4
 
 task.wait(10)
+print(hi)
 
 local Workspace = game.Workspace
 local ReplicatedStorage = game.ReplicatedStorage
