@@ -1,3 +1,4 @@
+-- 4
 local Workspace = game.Workspace
 local ReplicatedStorage = game.ReplicatedStorage
 local SoundService = game.SoundService
@@ -18,32 +19,32 @@ local TPTable = {
 	[1] = {
 		['name'] = "players"
 	},
-    [2] = {
+	[2] = {
 		['name'] = "oob",
-        [1] = {
+		[1] = {
 			['name'] = "shop",
 			['position'] = Vector3.new(-629, -507, -28),
 			['image'] = "rbxassetid://0"
 		},
-        [2] = {
+		[2] = {
 			['name'] = "arcade lobby",
 			['position'] = Vector3.new(-153, 1688, 33),
 			['image'] = "rbxassetid://0"
 		}
-    },
-    [3] = {
+	},
+	[3] = {
 		['name'] = "mall",
-        [1] = {
+		[1] = {
 			['name'] = "parking",
 			['position'] = Vector3.new(-802, -3, -68),
 			['image'] = "http://www.roblox.com/asset/?id=17474832112"
 		},
-        [2] = {
+		[2] = {
 			['name'] = "club",
 			['position'] = Vector3.new(-1156, 23, -258),
 			['image'] = "http://www.roblox.com/asset/?id=17474838618"
 		},
-        [3] = {
+		[3] = {
 			['name'] = "parking top",
 			['position'] = Vector3.new(-1145, 78, 136),
 			['image'] = "http://www.roblox.com/asset/?id=17474842703"
@@ -53,20 +54,20 @@ local TPTable = {
 			['position'] = Vector3.new(-903, 9, -362),
 			['image'] = "rbxassetid://0"
 		}
-    },
-    [4] = {
+	},
+	[4] = {
 		['name'] = "russia",
-        [1] = {
+		[1] = {
 			['name'] = "benny's",
 			['position'] = Vector3.new(-154, 11, -421),
 			['image'] = "http://www.roblox.com/asset/?id=17474849339"
 		},
-        [2] = {
+		[2] = {
 			['name'] = "cyberia",
 			['position'] = Vector3.new(-99, 13, -559),
 			['image'] = "http://www.roblox.com/asset/?id=17474853712"
 		},
-        [3] = {
+		[3] = {
 			['name'] = "garage",
 			['position'] = Vector3.new(-472, 20, -1118),
 			['image'] = "rbxassetid://0"
@@ -76,46 +77,46 @@ local TPTable = {
 			['position'] = Vector3.new(107, 115, -762),
 			['image'] = "rbxassetid://0"
 		}
-    },
-    [5] = {
+	},
+	[5] = {
 		['name'] = "port",
-        [1] = {
+		[1] = {
 			['name'] = "garage",
 			['position'] = Vector3.new(-539, 15, 1153),
 			['image'] = "http://www.roblox.com/asset/?id=17474862971"
 		},
-        [2] = { --wanna mispelled this asnennys
+		[2] = { --wanna mispelled this asnennys
 			['name'] = "benny's",
 			['position'] = Vector3.new(-771, 15, 1778),
 			['image'] = "http://www.roblox.com/asset/?id=17474866882"
 		}
-    },
-    [6] = {
+	},
+	[6] = {
 		['name'] = "airport",
-        [1] =  {
+		[1] =  {
 			['name'] = "294",
 			['position'] = Vector3.new(-2470, 42, 1260),
 			['image'] = "http://www.roblox.com/asset/?id=17474871389"
 		},
-        [2] = {
+		[2] = {
 			['name'] = "bathroom",
 			['position'] = Vector3.new(-3034, 42, 1383),
 			['image'] = "http://www.roblox.com/asset/?id=17483675268"
 		}
-    },
-    [7] = {
+	},
+	[7] = {
 		['name'] = "backrooms",
-        [1] = {
+		[1] = {
 			['name'] = "entrance",
 			['position'] = Vector3.new(-1325, -91, 66),
 			['image'] = "http://www.roblox.com/asset/?id=17483450780"
 		},
-        [2] = {
+		[2] = {
 			['name'] = "pitfalls",
 			['position'] = Vector3.new(-1887, -91, 54),
 			['image'] = "http://www.roblox.com/asset/?id=17483455185"
 		},
-        [3] = {
+		[3] = {
 			['name'] = "thing",
 			['position'] = Vector3.new(-1565, -91, 465),
 			['image'] = "http://www.roblox.com/asset/?id=17483457814"
@@ -125,20 +126,20 @@ local TPTable = {
 			['position'] = Vector3.new(-1635, -69, 271),
 			['image'] = "rbxassetid://0"
 		}
-    },
-    [8] = {
+	},
+	[8] = {
 		['name'] = "hotel",
-        [1] = {
+		[1] = {
 			['name'] = "room",
 			['position'] = Vector3.new(-1709, 327, -483),
 			['image'] = "http://www.roblox.com/asset/?id=17483496833"
 		},
-        [2] = {
+		[2] = {
 			['name'] = "slides",
 			['position'] = Vector3.new(-1456, 263, -510),
 			['image'] = "http://www.roblox.com/asset/?id=17483499340"
 		},
-        [3] = {
+		[3] = {
 			['name'] = "wellness",
 			['position'] = Vector3.new(-1675, 196, -655),
 			['image'] = "http://www.roblox.com/asset/?id=17483509567"
@@ -148,20 +149,20 @@ local TPTable = {
 			['position'] = Vector3.new(-1614, 367, -491),
 			['image'] = "rbxassetid://0"
 		}
-    },
-    [9] = {
+	},
+	[9] = {
 		['name'] = "poolrooms",
-        [1] = {
+		[1] = {
 			['name'] = "first floor",
 			['position'] = Vector3.new(-1673, 450, -675),
 			['image'] = "http://www.roblox.com/asset/?id=17483634427"
 		},
-        [2] = {
+		[2] = {
 			['name'] = "second floor",
 			['position'] = Vector3.new(-1598, 472, -636),
 			['image'] = "http://www.roblox.com/asset/?id=17483636298"
 		},
-        [3] = {
+		[3] = {
 			['name'] = "third floor",
 			['position'] = Vector3.new(-1966, 492, -295),
 			['image'] = "http://www.roblox.com/asset/?id=17483639103"
@@ -171,7 +172,7 @@ local TPTable = {
 			['position'] = Vector3.new(-1851, 534, -423),
 			['image'] = "rbxassetid://0"
 		}
-    },
+	},
 	[10] = {
 		['name'] = "flatgrass",
 		[1] = {
@@ -227,7 +228,7 @@ local TPTable = {
 }
 
 function Teleport(position)
-	Workspace[player.Name].HumanoidRootPart.Position = position
+	Workspace[player.Name].HumanoidRootPart.CFrame = CFrame.new(position)
 end
 
 
@@ -355,7 +356,7 @@ scriptPanelBgGrad.Image = "rbxassetid://12320989495"
 scriptPanelBgGrad.ImageColor3 = Color3.new(.1,1,0)
 scriptPanelBgGrad.ImageTransparency = .75
 scriptPanelBgGrad.ScaleType = Enum.ScaleType.Tile
-scriptPanelBgGrad.TileSize = UDim2.new(1,0,0,6)
+scriptPanelBgGrad.TileSize = UDim2.new(1,0,0,4)
 uic(scriptPanelBgGrad, 8)
 
 scriptPanelBgGradGrad = Instance.new("UIGradient", scriptPanelBgGrad)
@@ -363,6 +364,7 @@ scriptPanelBgGradGrad.Rotation = -90
 scriptPanelBgGradGrad.Transparency = NumberSequence.new(0,1)
 
 Topbar = Instance.new("Frame", scriptPanel)
+Topbar.Name = 'topbar'
 Topbar.BackgroundColor3 = Color3.new(0,0,0)
 Topbar.BackgroundTransparency = .75
 Topbar.Size = UDim2.new(1,0,0,32)
@@ -491,9 +493,17 @@ PlayerTabCurrentPlayerHeadshot.Image = game.Players:GetUserThumbnailAsync(game.P
 uic(PlayerTabCurrentPlayerHeadshot, 8)
 uip(PlayerTabCurrentPlayerHeadshot, 3,3,3,3)
 
+PlayerTabMiddle = Instance.new('Frame', PlayerTab)
+PlayerTabMiddle.Name = 'middle'
+PlayerTabMiddle.LayoutOrder = 2
+PlayerTabMiddle.AnchorPoint = Vector2.new(.5,0)
+PlayerTabMiddle.AutomaticSize = Enum.AutomaticSize.Y
+PlayerTabMiddle.BackgroundTransparency = 1
+
+
 PlayerTabStatus = Instance.new("Frame", PlayerTab)
 PlayerTabStatus.Name = "status"
-PlayerTabStatus.LayoutOrder = 2
+PlayerTabStatus.LayoutOrder = 3
 PlayerTabStatus.AnchorPoint = Vector2.new(.5,0)
 PlayerTabStatus.AutomaticSize = Enum.AutomaticSize.Y
 PlayerTabStatus.BackgroundTransparency = 1
@@ -552,7 +562,7 @@ uisc(PlayerTab["delete script"], Vector2.new(600, 99999), Vector2.new(0,0))
 PlayerTab["delete script"].Size = UDim2.new(1,-120,0,28)
 PlayerTab["delete script"].ImageLabel.ImageRectSize = Vector2.new(20,20)
 PlayerTab["delete script"].ImageLabel.ImageRectOffset = Vector2.new(0,100)
-		
+
 
 
 create_tab("game")
@@ -567,7 +577,7 @@ uic(GameTabEvents, 4)
 uill(GameTabEvents, UDim.new(0,4))
 GameTabEvents.UIListLayout.FillDirection = Enum.FillDirection.Horizontal
 GameTabEvents.UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-uip(GameTabEvents, 8,16,8,8)
+uip(GameTabEvents, 8,0,8,8)
 
 GameTabCurrentEvent = Instance.new("Frame", GameTabEvents)
 GameTabCurrentEvent.Name = "current event"
@@ -587,6 +597,7 @@ CurrentEventInfo.Size = UDim2.new(.5,-6,1,0)
 CurrentEventName = Instance.new("TextLabel", CurrentEventInfo)
 CurrentEventName.Name = "name"
 CurrentEventName.AutomaticSize = Enum.AutomaticSize.X
+CurrentEventName.TextXAlignment = Enum.TextXAlignment.Left
 CurrentEventName.BackgroundTransparency = 1
 CurrentEventName.Size = UDim2.new(1,0,1,0)
 CurrentEventName.Text = ReplicatedStorage.values.events.currentevent.Value
@@ -603,6 +614,7 @@ CurrentEventIcon.Size = UDim2.new(.75,0,.75,0)
 CurrentEventIcon.SizeConstraint = Enum.SizeConstraint.RelativeYY
 CurrentEventIcon.BackgroundColor3 = Color3.new(0,0,0)
 CurrentEventIcon.BackgroundTransparency = .75
+uic(CurrentEventIcon, 4)
 
 GameTabBuyEvent = Instance.new("Frame", GameTabEvents)
 GameTabBuyEvent.Name = "buy"
@@ -621,16 +633,12 @@ EventCooldownTimer.TextColor3 = Color3.new(1,1,1)
 EventCooldownTimer.TextSize = 18
 EventCooldownTimer.TextTransparency = .25
 uic(EventCooldownTimer, 4)
-GameTabBuyEventFrame = Instance.new("Frame", GameTabBuyEvent)
-GameTabBuyEventFrame.Size = UDim2.new(1,-16,.5,0)
-GameTabBuyEventFrame.BackgroundTransparency = 1
-GameTabBuyEventFrame.LayoutOrder = 1
-GameTabBuyEventDisable = Instance.new("TextButton", GameTabBuyEventFrame)
-GameTabBuyEventDisable.LayoutOrder = 1
+GameTabBuyEventDisable = Instance.new("TextButton", GameTabBuyEvent)
+GameTabBuyEventDisable.Name = "disable"
+GameTabBuyEventDisable.LayoutOrder = 2
 GameTabBuyEventDisable.BackgroundColor3 = Color3.new(0,0,0)
 GameTabBuyEventDisable.BackgroundTransparency = .75
-GameTabBuyEventDisable.Position = UDim2.new(0,4,0,0)
-GameTabBuyEventDisable.Size = UDim2.new(1,0,1,-4)
+GameTabBuyEventDisable.Size = UDim2.new(1,-16,.5,-4)
 GameTabBuyEventDisable.FontFace = semiboldfont
 GameTabBuyEventDisable.Text = "disable events"
 GameTabBuyEventDisable.TextColor3 = Color3.new(1,1,1)
@@ -642,20 +650,22 @@ GameTabBuyEventDisable.MouseButton1Click:Connect(function()
 end)
 
 GameTabMiddle = Instance.new("Frame", GameTab)
+GameTabMiddle.LayoutOrder = 2
 GameTabMiddle.Name = "middle"
 
 GameTabValues = Instance.new("Frame", GameTab)
 GameTabValues.Name = "values"
+GameTabValues.LayoutOrder = 4
 GameTabValues.AutomaticSize = Enum.AutomaticSize.Y
 GameTabValues.BackgroundTransparency = 1
-GameTabValues.LayoutOrder = 2
 GameTabValues.Size = UDim2.new(1,0,0,0)
 uigl(GameTabValues, UDim2.new(0,6,0,8), UDim2.new(.5,-6,0,24))
 uisc(GameTabValues, Vector2.new(600,99999), Vector2.new(0,0))
 GameTabValuesTitle = Instance.new("Frame", GameTab)
+GameTabValuesTitle.Name = "valuestitle"
+GameTabValuesTitle.LayoutOrder = 3
 GameTabValuesTitle.BackgroundTransparency = 1
 GameTabValuesTitle.Size = UDim2.new(1,0,0,24)
-GameTabValuesTitle.LayoutOrder = 2
 GameTabValuesTitleLabel = Instance.new("TextLabel", GameTabValuesTitle)
 GameTabValuesTitleLabel.AnchorPoint = Vector2.new(.5,0)
 GameTabValuesTitleLabel.BackgroundColor3 = Color3.new(0,0,0)
@@ -668,6 +678,30 @@ GameTabValuesTitleLabel.TextSize = 18
 GameTabValuesTitleLabel.TextColor3 = Color3.new(1,1,1)
 GameTabValuesTitleLabel.TextTransparency = .25
 uic(GameTabValuesTitleLabel, 4)
+
+local CoordsFrame = gui.hud.main.Frame.leveling:Clone()
+CoordsFrame.Parent = gui.hud.main.Frame
+CoordsFrame.LayoutOrder = 10
+CoordsFrame.Name = "coords"
+CoordsFrame.Visible = false
+CoordsFrame.lower:Destroy()
+CoordsFrame.levelVisualizer:Destroy()
+CoordsFrame.upper.lvl:Destroy()
+CoordsFrame.UIListLayout:Destroy()
+CoordsFrame.UIPadding:Destroy()
+CoordsFrame.upper.Size = UDim2.new(1,0,1,0)
+local CoordsLabel = CoordsFrame.upper.xp
+CoordsLabel.Name = "label"
+CoordsLabel.Size = UDim2.new(1,0,1,-4)
+CoordsLabel.TextSize = 16
+CoordsLabel.TextColor3 = Color3.new(1,1,1)
+CoordsLabel.TextScaled = false
+CoordsLabel.TextXAlignment = Enum.TextXAlignment.Center
+CoordsLabel.Text = "x:0, y:0, z:0"
+
+char.HumanoidRootPart:GetPropertyChangedSignal("Position"):Connect(function()
+	CoordsLabel.Text = "x:" .. math.round(char.HumanoidRootPart.Position.X) .. " y:" .. math.round(char.HumanoidRootPart.Position.Y) .. " z:" .. math.round(char.HumanoidRootPart.Position.Z)
+end)
 
 function create_specific_value(name, type, default, callback)
 	local value = Instance.new("Frame", GameTabValues)
@@ -685,7 +719,7 @@ function create_specific_value(name, type, default, callback)
 	title.TextSize = 18
 	title.TextColor3 = Color3.new(1,1,1)
 	title.TextTransparency = .25
-	
+
 	if type == "textbox" then
 		local input = Instance.new("ImageLabel", value)
 		input.BackgroundTransparency = 1
@@ -745,8 +779,8 @@ function create_specific_value(name, type, default, callback)
 	end
 end
 
-create_specific_value("ragdoll crawl multiplier", "textbox", 1, function()
-	ReplicatedStorage.module.specificsModule.RagdollCrawlMultiplier.Value = GameTabValues["ragdoll crawl multiplier"].ImageLabel.TextBox.Text
+create_specific_value("ragdoll multiplier", "textbox", 1, function()
+	ReplicatedStorage.module.specificsModule.RagdollCrawlMultiplier.Value = GameTabValues["ragdoll multiplier"].ImageLabel.TextBox.Text
 end)
 create_specific_value("gravity", "textbox", 100, function()
 	Workspace.Gravity = GameTabValues["gravity"].ImageLabel.TextBox.Text
@@ -776,6 +810,17 @@ create_specific_value("fullbright", "checkbox", false, function()
 end)
 create_specific_value("inf jump", "checkbox", false, function() return end)
 create_specific_value("auto bhop", "checkbox", false, function() return end)
+create_specific_value('retro prompts', 'checkbox', false, function()
+	if GameTabValues["retro prompts"].ImageButton.Active then
+		ReplicatedStorage.values.rounds.roundmap.Value = 'nn_voxel'
+	else
+		ReplicatedStorage.values.rounds.roundmap.Value = ''
+	end
+end)
+create_specific_value('show coordinates', 'checkbox',false, function()
+  print('test')
+  CoordsFrame.Visible = GameTabValues['show coordinates'].ImageButton.Active
+end)
 
 
 
@@ -804,6 +849,7 @@ function create_tp_section(name, order)
 	uic(title, 4)
 	local frame = Instance.new("Frame", TeleportTab)
 	frame.Name = name
+	frame.Visible = false
 	frame.LayoutOrder = order + 1
 	frame.AutomaticSize = Enum.AutomaticSize.Y
 	frame.BackgroundColor3 = Color3.new(0,0,0)
@@ -811,7 +857,7 @@ function create_tp_section(name, order)
 	frame.Size = UDim2.new(1,0,0,0)
 	uic(frame, 4)
 	uigl(frame, UDim2.new(0,8,0,8), UDim2.new(.5,-8,0,96))
-	uip(frame, 8,8,8,8)
+	uip(frame, 8,0,8,8)
 	button.MouseButton1Click:Connect(function()
 		frame.Visible = not frame.Visible
 		if frame.Visible then
@@ -854,7 +900,9 @@ for map,mtable in ipairs(TPTable) do
 		label.TextSize = 24
 		label.TextTransparency = .25
 		image.MouseButton1Click:Connect(function()
-			ReplicatedStorage.events.player.char.changezone:FireServer("nn_" .. image.Parent.Name)
+			if image.Parent.Name ~= 'oob' or image.Parent.name ~= 'players' then
+				ReplicatedStorage.events.player.char.changezone:FireServer("nn_" .. image.Parent.Name)
+			end
 			Teleport(ltable['position'])
 		end)
 		tplindex += 1
@@ -1135,6 +1183,10 @@ AutoTabButton.MouseButton1Click:Connect(function()
 	clicksfx:Play()
 end)
 
+GameTabButton.UIStroke.Transparency = 1
+TeleportTabButton.UIStroke.Transparency = 1
+AutoTabButton.UIStroke.Transparency = 1
+
 
 game.UserInputService.InputBegan:Connect(function(input, chatting)
 	if (input.KeyCode == Enum.KeyCode.RightShift or input.KeyCode == Enum.KeyCode.Backquote) and (not chatting) then
@@ -1145,8 +1197,7 @@ game.UserInputService.InputBegan:Connect(function(input, chatting)
 		screengui.Enabled = false
 	end
 end)
-
-gui.TopbarPlus.TopbarContainer.versionIcon.IconButton.MouseButton1Click:Connect(function()
+gui.topbar.MenuHolder.MenuIconHolder.admin.Background.MouseButton1Click:Connect(function()
 	screengui.Enabled = not screengui.Enabled
 end)
 
@@ -1168,37 +1219,40 @@ end]]
 serverstable = ReplicatedStorage.events.technical.FetchServers:InvokeServer()
 serverlist = gui.menu.main.servers.ServerBrowser.Bottom.ServerList
 
-adminserverupdate = function() for serverindex, serverinfo in serverlist:GetChildren("TextButton") do
-    if serverinfo:IsA("TextButton") then
-    	local id = serverinfo.Icon.ServerId.Text
-    	local server = serverstable['servers'][id]
-        serverinfo.Gamemode.Info.Text = server['place']['name'] --gamemode
-        serverinfo.Gamemode.Size = UDim2.new(.6,-85,1,0)
-        serverinfo.Friends.Size = UDim2.new(.1,0,1,0)
-        local memory = serverinfo.Players:Clone()
-        memory.Parent = serverinfo
-        memory.Name = "Memory"
-        memory.Title.Text = "memory"
-        memory.Info.Text = math.floor(server['stats']['memory']) .. "MB"
-        local uptime = serverinfo.Players:Clone()
-        uptime.Parent = serverinfo
-        uptime.Name = "Uptime"
-        uptime.Title.Text = "uptime"
-        local hrs = math.floor(server['stats']['uptime'] / 3600)
-        local mins = math.floor((server['stats']['uptime'] - hrs * 3600) / 60)
-        local secs = math.floor(server['stats']['uptime'] - hrs * 3600 - mins * 60)
-        if not (hrs == 0) then
-        uptime.Info.Text = hrs .. "h " .. mins .. "m " .. secs .. "s"
-        else if not (mins == 0) then
-                uptime.Info.Text = mins .. "m " .. secs .. "s"
-            else
-                uptime.Info.Text = secs .. "s"
-            end
-        end
-    end
-    wait()
-end end
+function adminserverupdate() for serverindex, serverinfo in serverlist:GetChildren("TextButton") do
+		if serverinfo:IsA("TextButton") then
+			local id = serverinfo.Icon.ServerId.Text
+			local server = serverstable['servers'][id]
+			serverinfo.Gamemode.Info.Text = server['place']['name'] --gamemode
+			serverinfo.Gamemode.Size = UDim2.new(.6,-85,1,0)
+			serverinfo.Friends.Size = UDim2.new(.1,0,1,0)
+			local memory = serverinfo.Players:Clone()
+			memory.Parent = serverinfo
+			memory.Name = "Memory"
+			memory.Title.Text = "memory"
+			memory.Info.Text = math.floor(server['stats']['memory']) .. "MB"
+			local uptime = serverinfo.Players:Clone()
+			uptime.Parent = serverinfo
+			uptime.Name = "Uptime"
+			uptime.Title.Text = "uptime"
+			local hrs = math.floor(server['stats']['uptime'] / 3600)
+			local mins = math.floor((server['stats']['uptime'] - hrs * 3600) / 60)
+			local secs = math.floor(server['stats']['uptime'] - hrs * 3600 - mins * 60)
+			if not (hrs == 0) then
+				uptime.Info.Text = hrs .. "h " .. mins .. "m " .. secs .. "s"
+			else if not (mins == 0) then
+					uptime.Info.Text = mins .. "m " .. secs .. "s"
+				else
+					uptime.Info.Text = secs .. "s"
+				end
+			end
+		end
+		wait()
+	end
+end
+
 adminserverupdate()
+
 game.Players.LocalPlayer.PlayerGui.menu.main.servers.ServerBrowser.Top.Options.Refresh.MouseButton1Click:Connect(function()
 	serverstable = game.ReplicatedStorage.events.technical.FetchServers:InvokeServer()
 	wait(4.5)
@@ -1209,34 +1263,16 @@ char.Humanoid.HealthChanged:Connect(function(health)
 	if (health < 26) and (health > 0) then
 		--ReplicatedStorage.events.player.char.respawnchar:FireServer()
 		Teleport(Vector3.new(-153, 1688, 33))
-		wait(.1)
+		workspace.lobby:WaitForChild('lobbyzone')
 		workspace.lobby.lobbyzone.CanCollide = false
 	end
 end)
-
-local coordsframe = gui.hud.main.Frame.leveling:Clone()
-coordsframe.Parent = gui.hud.main.Frame.leveling
-coordsframe.LayoutOrder = -10
-coordsframe.Name = "coords"
-coordsframe.lower:Destroy()
-coordsframe.levelVisualizer:Destroy()
-coordsframe.upper.lvl:Destroy()
-local coordslabel = coordsframe.upper.xp
-coordslabel.Name = "label"
-coordslabel.TextSize = 18
-coordslabel.TextColor3 = Color3.new(1,1,1)
-coordslabel.Text = "x:" .. 0 .. " y:" .. 0 .. " z:" .. 0
-
-char.HumanoidRootPart:GetPropertyChangedSignal("Position"):Connect(function()
-	coordslabel.Text = "x:" .. math.round(char.HumanoidRootPart.Position.X) .. " y:" .. math.round(char.HumanoidRootPart.Position.Y) .. " z:" .. math.round(char.HumanoidRootPart.Position.Z)
-end)
-
-
 
 local map = player.Team
 ReplicatedStorage.events.player.char.changezone:FireServer("nn_hotel")
 wait(.5)
 player.PlayerScripts.game.environment.zoneLighting.Enabled = false
+player.PlayerScripts.game.environment.roundLighting.Enabled = false
 ReplicatedStorage.events.player.char.changezone:FireServer(map.Name)
 
 while gui:FindFirstChild("scriptPanel") do
