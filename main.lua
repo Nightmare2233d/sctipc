@@ -1,7 +1,6 @@
 -- 4
 
 task.wait(10)
-print(hi)
 
 local Workspace = game.Workspace
 local ReplicatedStorage = game.ReplicatedStorage
@@ -1205,7 +1204,7 @@ gui.topbar.MenuHolder.MenuIconHolder.admin.Background.MouseButton1Click:Connect(
 	screengui.Enabled = not screengui.Enabled
 end)
 
-screengui.Enabled = true
+screengui.Enabled = false
 
 --random qol stuff
 if gui.menu.main:FindFirstChild("news") then
