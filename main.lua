@@ -1279,7 +1279,7 @@ ReplicatedStorage.events.player.char.changezone:FireServer("nn_hotel")
 task.wait(.5)
 ReplicatedStorage.events.player.char.changezone:FireServer("nn_poolrooms")
 task.wait(.5)
-player.PlayerScripts.game.environment.zoneLighting.Enabled = false
+--player.PlayerScripts.game.environment.zoneLighting.Enabled = false
 player.PlayerScripts.game.environment.roundLighting.Enabled = false
 ReplicatedStorage.events.player.char.changezone:FireServer(map.Name)
 
