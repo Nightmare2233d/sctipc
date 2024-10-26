@@ -922,7 +922,7 @@ if game.ReplicatedStorage.culledMaps:FindFirstChild("nn_hotel") then
 	local map = game.ReplicatedStorage.culledMaps.nn_hotel
 	map:SetAttribute('NormallyHide', false)
 end
-game.ReplicatedStorage.culledMaps:FindFirstChild("nn_poolrooms") then
+if game.ReplicatedStorage.culledMaps:FindFirstChild("nn_poolrooms") then
 	local map = game.ReplicatedStorage.culledMaps.nn_poolrooms
 	map:SetAttribute('NormallyHide', false)
 end
