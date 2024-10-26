@@ -918,10 +918,13 @@ TeleportTab.oob['arcade lobby'].MouseButton1Click:Connect(function()
 end)
 TeleportTab.players.UIGridLayout.CellSize = UDim2.new(0,80,0,80)
 
-if game.ReplicatedStorage.maps:FindFirstChild("nn_hotel") then
-	local map = game.ReplicatedStorage.maps.nn_hotel
-	map.Parent = game.Workspace
-	map.Name = "nn_hotel_zones"
+if game.ReplicatedStorage.culledMaps:FindFirstChild("nn_hotel") then
+	local map = game.ReplicatedStorage.culledMaps.nn_hotel
+	map:SetAttribute('NormallyHide', false)
+end
+game.ReplicatedStorage.culledMaps:FindFirstChild("nn_poolrooms") then
+	local map = game.ReplicatedStorage.culledMaps.nn_poolrooms
+	map:SetAttribute('NormallyHide', false)
 end
 
 function update_player_teleports()
@@ -1273,7 +1276,9 @@ end)
 
 local map = player.Team
 ReplicatedStorage.events.player.char.changezone:FireServer("nn_hotel")
-wait(.5)
+task.wait(.5)
+ReplicatedStorage.events.player.char.changezone:FireServer("nn_poolrooms")
+task.wait(.5)
 player.PlayerScripts.game.environment.zoneLighting.Enabled = false
 player.PlayerScripts.game.environment.roundLighting.Enabled = false
 ReplicatedStorage.events.player.char.changezone:FireServer(map.Name)
