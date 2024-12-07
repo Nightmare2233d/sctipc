@@ -1268,9 +1268,9 @@ end)
 char.Humanoid.HealthChanged:Connect(function(health)
 	if (health < 26) and (health > 0) then
 		--ReplicatedStorage.events.player.char.respawnchar:FireServer()
-		Teleport(Vector3.new(-153, 1688, 33))
-		workspace.lobby:WaitForChild('lobbyzone')
-		workspace.lobby.lobbyzone.CanCollide = false
+		--Teleport(Vector3.new(-153, 1688, 33))
+		--workspace.lobby:WaitForChild('lobbyzone')
+		--workspace.lobby.lobbyzone.CanCollide = false
 	end
 end)
 
@@ -1280,7 +1280,7 @@ task.wait(.5)
 ReplicatedStorage.events.player.char.changezone:FireServer("nn_poolrooms")
 task.wait(.5)
 --player.PlayerScripts.game.environment.zoneLighting.Enabled = false
-player.PlayerScripts.game.environment.roundLighting.Enabled = false
+--player.PlayerScripts.game.environment.roundLighting.Enabled = false
 ReplicatedStorage.events.player.char.changezone:FireServer(map.Name)
 
 while gui:FindFirstChild("scriptPanel") do
