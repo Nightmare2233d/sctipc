@@ -81,7 +81,30 @@ local TPTable = {
 			['image'] = "rbxassetid://0"
 		}
 	},
-	[5] = {
+  [5] = {
+    ['name'] = 'outpost',
+    [1] = {
+      ['name'] = 'tower',
+      ['position'] = Vector3.new(95, 27, -1557),
+      ['image'] = 'rbxassetid://0'
+    },
+    [2] = {
+      ['name'] = 'bunker',
+      ['position'] = Vector3.new(93, 12, -2015),
+      ['image'] = 'rbxassetid://0'
+    },
+    [3] = {
+      ['name'] = 'rooftop',
+      ['position'] = Vector3.new(109, 49.1161728, -1845),
+      ['image'] = 'rbxassetid://0'
+    },
+    [4] = {
+      ['name'] = 'house',
+      ['position'] = Vector3.new(-177, 21, -1816),
+      ['image'] = 'rbxassetid://0'
+    }
+  },
+	[6] = {
 		['name'] = "port",
 		[1] = {
 			['name'] = "garage",
@@ -94,7 +117,7 @@ local TPTable = {
 			['image'] = "http://www.roblox.com/asset/?id=17474866882"
 		}
 	},
-	[6] = {
+	[7] = {
 		['name'] = "airport",
 		[1] =  {
 			['name'] = "294",
@@ -107,7 +130,7 @@ local TPTable = {
 			['image'] = "http://www.roblox.com/asset/?id=17483675268"
 		}
 	},
-	[7] = {
+	[8] = {
 		['name'] = "backrooms",
 		[1] = {
 			['name'] = "entrance",
@@ -130,7 +153,7 @@ local TPTable = {
 			['image'] = "rbxassetid://0"
 		}
 	},
-	[8] = {
+	[9] = {
 		['name'] = "hotel",
 		[1] = {
 			['name'] = "room",
@@ -153,7 +176,7 @@ local TPTable = {
 			['image'] = "rbxassetid://0"
 		}
 	},
-	[9] = {
+	[10] = {
 		['name'] = "poolrooms",
 		[1] = {
 			['name'] = "first floor",
@@ -176,7 +199,7 @@ local TPTable = {
 			['image'] = "rbxassetid://0"
 		}
 	},
-	[10] = {
+	[11] = {
 		['name'] = "flatgrass",
 		[1] = {
 			['name'] = "spawn",
@@ -189,7 +212,7 @@ local TPTable = {
 			['image'] = "rbxassetid://0"
 		}
 	},
-	[11] = {
+	[12] = {
 		['name'] = "playground",
 		[1] = {
 			['name'] = "spawn",
@@ -202,7 +225,7 @@ local TPTable = {
 			['image'] = "rbxassetid://0"
 		}
 	},
-	[12] = {
+	[13] = {
 		['name'] = "bigmaze",
 		[1] = {
 			['name'] = "spawn",
@@ -215,7 +238,7 @@ local TPTable = {
 			['image'] = "rbxassetid://0"
 		}
 	},
-	[13] = {
+	[14] = {
 		['name'] = "dreammaze",
 		[1] = {
 			['name'] = "top spawn",
