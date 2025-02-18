@@ -1245,7 +1245,7 @@ if game.StarterGui:FindFirstChild("hud") then
 	Instance.new("PitchShiftSoundEffect", game.StarterGui.hud.safe.bgm).Octave = .9 --truly qol
 end]]
 
-serverstable = ReplicatedStorage.events.technical.FetchServers:InvokeServer()
+--[[serverstable = ReplicatedStorage.events.technical.FetchServers:InvokeServer()
 serverlist = gui.menu.main.servers.ServerBrowser.Bottom.ServerList
 
 function adminserverupdate() for serverindex, serverinfo in serverlist:GetChildren("TextButton") do
@@ -1286,7 +1286,7 @@ game.Players.LocalPlayer.PlayerGui.menu.main.servers.ServerBrowser.Top.Options.R
 	serverstable = game.ReplicatedStorage.events.technical.FetchServers:InvokeServer()
 	wait(4.5)
 	adminserverupdate()
-end)
+end)]]
 
 char.Humanoid.HealthChanged:Connect(function(health)
 	if (health < 26) and (health > 0) then
