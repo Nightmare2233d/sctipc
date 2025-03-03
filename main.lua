@@ -1,5 +1,5 @@
 -- 4
-print('version 4')
+print('version 4.1')
 
 task.wait(10)
 
@@ -1134,7 +1134,6 @@ PlayerTabStatus.respawn.MouseButton1Click:Connect(function()
   local hint = hintModule.new("respawning...")
   hintModule.Appear(hint)
   task.wait(1)
-  hintModule.Close(hint)
 end)
 PlayerTabStatus.delete.MouseButton1Click:Connect(function()
   local hint = hintModule.new("this doesnt work anymore")
