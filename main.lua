@@ -6,6 +6,7 @@ local Workspace = game.Workspace
 local ReplicatedStorage = game.ReplicatedStorage
 local SoundService = game.SoundService
 local TweenService = game.TweenService
+local hintModule = require(game:GetService("Players").LocalPlayer.PlayerGui.hud[".scripts"].mainHud.hintModule)
 local Players = game.Players
 local player = Players.LocalPlayer
 local gui = player.PlayerGui
@@ -257,8 +258,6 @@ function Teleport(position)
 	Workspace[player.Name].HumanoidRootPart.CFrame = CFrame.new(position)
 end
 
-
-
 function uic(Parent, Strenght)
 	Instance.new("UICorner", Parent).CornerRadius = UDim.new(0,Strenght)
 end
@@ -288,8 +287,6 @@ function uisc(Parent, max, min)
 	sizeconstraint.MaxSize = max
 	sizeconstraint.MinSize = min
 end
-
-
 
 function create_tab_button(name, order, color)
 	local button = Instance.new("TextButton", TopbarTabsHolder)
@@ -328,14 +325,15 @@ function create_tab(name)
 	uip(tab, 8,8,8,8)
 end
 
-
-
 function create_sfx(name, id, vol)
 	sound = Instance.new("Sound", SfxFolder)
 	sound.Name = name
 	sound.SoundId = id
 	sound.Volume = vol
 end
+
+local loadingHint = hintModule.new("loading adro's script...")
+hintModule.Appear(loadingHint)
 
 screengui = Instance.new("ScreenGui", gui)
 screengui.Enabled = false
@@ -926,10 +924,14 @@ for map,mtable in ipairs(TPTable) do
 		label.TextSize = 24
 		label.TextTransparency = .25
 		image.MouseButton1Click:Connect(function()
-			if image.Parent.Name ~= 'oob' or image.Parent.name ~= 'players' then
+			--[[if image.Parent.Name ~= 'oob' or image.Parent.name ~= 'players' then
 				ReplicatedStorage.events.player.char.changezone:FireServer("nn_" .. image.Parent.Name)
-			end
+			end]]
+       local hint = hintModule.new("teleported to " .. image.TextLabel.Text)
+       hintModule.Appear(hint)
 			Teleport(ltable['position'])
+       task.wait(.1)
+       hintModule.Close(hint)
 		end)
 		tplindex += 1
 	end
@@ -973,7 +975,11 @@ function update_player_teleports()
 			label.TextTransparency = .25
 			uic(label, 4)
 			button.MouseButton1Click:Connect(function()
+         local hint = hintModule.new("teleported to " .. v.DisplayName)
+         hintModule.Appear(hint)
 				Teleport(game.Workspace[button.Name].HumanoidRootPart.Position)
+         task.wait(.1)
+         hintModule.Close(hint)
 			end)
 		end
 		wait()
@@ -1113,23 +1119,38 @@ PlayerTabCurrentPlayerValue = Instance.new("StringValue", PlayerTabCurrentPlayer
 PlayerTabCurrentPlayerValue.Name = "selected"
 PlayerTabCurrentPlayerValue.Value = player.Name
 
-PlayerTabStatus.kill.MouseButton1Click:Connect(function() 
+PlayerTabStatus.kill.MouseButton1Click:Connect(function()
+  local hint = hintModule.new("killing character...")
+  hintModule.Appear(hint)
 	ReplicatedStorage.events.player.char.ClientDeath:FireServer()
 	clicksfx:Play()
+  task.wait(.1)
+  hintModule.Close(hint)
 end)
 PlayerTabStatus.respawn.MouseButton1Click:Connect(function()
 	ReplicatedStorage.events.player.char.respawnchar:FireServer()
 	clicksfx:Play()
+  local hint = hintModule.new("respawning...")
+  hintModule.Appear(hint)
+  task.wait(1)
+  hintModule.Close(hint)
 end)
 PlayerTabStatus.delete.MouseButton1Click:Connect(function()
+  local hint = hintModule.new("this doesnt work anymore")
+  hintModule.Appear(hint)
 	ReplicatedStorage.events.player.char.removechar:FireServer()
 	clicksfx:Play()
+  task.wait(.1)
+  hintModule.Close(hint)
 end)
 PlayerTabStatus.depossess.MouseButton1Click:Connect(function()
+  local depossessHint = hintModule.new("depossessing...")
+  hintModule.Appear(depossessHint)
 	for i=1, 40 do
 		game.ReplicatedStorage.events.player.char.botabilityRemote:FireServer("dash")
 		wait()
 	end
+  hintModule.Close(depossessHint)
 end)
 PlayerTab.rejoin.MouseButton1Click:Connect(function()
 	game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, player)
@@ -1306,10 +1327,16 @@ task.wait(.5)
 --player.PlayerScripts.game.environment.roundLighting.Enabled = false
 ReplicatedStorage.events.player.char.changezone:FireServer(map.Name)
 
-while gui:FindFirstChild("scriptPanel") do
-	if GameTabValues["auto bhop"].ImageButton.Active then
+game:GetService("RunService").RenderStepped:Connect(function()
+  if not gui:FindFirstChild("scriptPanel") then return end
+  
+  if GameTabValues["auto bhop"].ImageButton.Active then
 		char.Humanoid.JumpPower = 28.3
 	end
+  
+  if player.Character:FindFirstChild("WavCrown") then
+    player.Character.WavCrown:WaitForChild("Handle"):WaitForChild('Crystals'):WaitForChild('Script').Enabled = true
+  end
+end)
 
-	wait()
-end
+hintModule.Close(loadingHint)
