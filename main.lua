@@ -1,4 +1,5 @@
 -- 4
+print('version 4')
 
 task.wait(10)
 
