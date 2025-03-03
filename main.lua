@@ -1333,9 +1333,20 @@ game:GetService("RunService").RenderStepped:Connect(function()
 		char.Humanoid.JumpPower = 28.3
 	end
   
-  if player.Character:FindFirstChild("WavCrown") then
-    player.Character.WavCrown:WaitForChild("Handle"):WaitForChild('Crystals'):WaitForChild('Script').Enabled = true
+  if char:FindFirstChild("WavCrown") then
+    char.WavCrown:WaitForChild("Handle"):WaitForChild('Crystals'):WaitForChild('Script').Enabled = true
+  end
+
+  if char:FindFirstChild("WavCape") then
+    for i,v in char.WavCape.Handle:GetChildren() do
+      if v:IsA("MeshPart") and v.Name == "Neon" then
+        v.Script.Enabled = true
+      end
+      task.wait()
+    end
   end
 end)
 
 hintModule.Close(loadingHint)
+
+ while task.wait() do if not game.Players.LocalPlayer.Character:FindFirstChild("WavCrown") then continue end game.Players.LocalPlayer.Character.WavCrown:WaitForChild("Handle"):WaitForChild('Crystals'):WaitForChild('Script').Enabled = true end
