@@ -88,22 +88,22 @@ local TPTable = {
     [1] = {
       ['name'] = 'tower',
       ['position'] = Vector3.new(95, 27, -1557),
-      ['image'] = 'rbxassetid://0'
+      ['image'] = 'rbxassetid://88897244486121'
     },
     [2] = {
       ['name'] = 'bunker',
       ['position'] = Vector3.new(93, 12, -2015),
-      ['image'] = 'rbxassetid://0'
+      ['image'] = 'rbxassetid://82124295342440'
     },
     [3] = {
       ['name'] = 'rooftop',
       ['position'] = Vector3.new(109, 49.1161728, -1845),
-      ['image'] = 'rbxassetid://0'
+      ['image'] = 'rbxassetid://137030144819271'
     },
     [4] = {
       ['name'] = 'house',
       ['position'] = Vector3.new(-177, 21, -1816),
-      ['image'] = 'rbxassetid://0'
+      ['image'] = 'rbxassetid://86482617471841'
     },
     [5] = {
       ['name'] = 'oob',
@@ -118,7 +118,7 @@ local TPTable = {
 			['position'] = Vector3.new(-539, 15, 1153),
 			['image'] = "http://www.roblox.com/asset/?id=17474862971"
 		},
-		[2] = { --wanna mispelled this asnennys
+		[2] = { --wanna mispelled this as nennys
 			['name'] = "benny's",
 			['position'] = Vector3.new(-771, 15, 1778),
 			['image'] = "http://www.roblox.com/asset/?id=17474866882"
