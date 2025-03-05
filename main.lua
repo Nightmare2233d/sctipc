@@ -88,22 +88,22 @@ local TPTable = {
     [1] = {
       ['name'] = 'tower',
       ['position'] = Vector3.new(95, 27, -1557),
-      ['image'] = 'rbxassetid://88897244486121'
+      ['image'] = 'rbxassetid://115044501344439'
     },
     [2] = {
       ['name'] = 'bunker',
       ['position'] = Vector3.new(93, 12, -2015),
-      ['image'] = 'rbxassetid://82124295342440'
+      ['image'] = 'rbxassetid://82266224792985'
     },
     [3] = {
       ['name'] = 'rooftop',
       ['position'] = Vector3.new(109, 49.1161728, -1845),
-      ['image'] = 'rbxassetid://137030144819271'
+      ['image'] = 'rbxassetid://122365354877840'
     },
     [4] = {
       ['name'] = 'house',
       ['position'] = Vector3.new(-177, 21, -1816),
-      ['image'] = 'rbxassetid://86482617471841'
+      ['image'] = 'rbxassetid://123163204300219'
     },
     [5] = {
       ['name'] = 'oob',
