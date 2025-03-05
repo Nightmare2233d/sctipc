@@ -900,7 +900,8 @@ function create_tp_section(name, order)
 		clicksfx:Play()
 	end)
 	title.MouseButton1Click:Connect(function()
-		ReplicatedStorage.events.player.char.changezone:FireServer("nn_" .. title.Text)
+		--ReplicatedStorage.events.player.char.changezone:FireServer("nn_" .. title.Text)
+		player.Team = game.Teams:WaitForChild("nn_" .. title.Text)
 	end)
 end
 
