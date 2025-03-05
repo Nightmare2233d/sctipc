@@ -109,6 +109,7 @@ local TPTable = {
       ['name'] = 'oob',
       ['position'] = Vector3.new(275, 9, -2093),
       ['image'] = 'rbxassetid://0'
+    },
   },
 	[6] = {
 		['name'] = "port",
